@@ -11,3 +11,7 @@ Apache instructions for running wsgi.py with python3 venv:
 
 2. Configure apache's python interpreter to the virtual env
     2.1 insert "WSGIPythonHome /path/to/pythonenv/env-name" to apache2.conf
+
+3. Add virtualhost
+    3.1 Copy st4rt3r.conf into sites-available and create a link to it from site-enabled (replace the path to wsgi.py file).
+    3.2 Add to hosts list the server name: 127.0.0.1 st4rt3r
