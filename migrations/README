@@ -1,1 +1,30 @@
-Generic single-database configuration.
+Initialize postgresql database:
+
+1. Connect to the default database with user postgres :
+    sudo -u postgres psql template1
+
+2. Set the password for user postgres, then exit psql (Ctrl-D) :
+    ALTER USER postgres with encrypted password 'xxxxxxx';
+
+3. Edit the pg_hba.conf file :
+    sudo nano /etc/postgresql/9.1/main/pg_hba.conf
+
+    And change "peer" to "md5" on the line concerning postgres :
+    local      all     postgres     peer --> md5
+
+4. Restart the database :
+    sudo /etc/init.d/postgresql restart
+
+5. Create a user develop:
+    createuser -U postgres -d -e -E -l -P -r -s develop
+
+
+6. Again, edit the pg_hba.conf file (see step 3 above), and change "peer" to "md5" on the line concerning "all" other users :
+    local      all     all     peer md5
+
+7. Restart (like in step 4)
+
+8. login:
+    psql template1 -U develop
+
+9. Now createdb <dbname> should work.
