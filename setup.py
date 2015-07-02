@@ -29,5 +29,7 @@ setup(name='st4rt3r',
       entry_points="""\
       [paste.app_factory]
       main = st4rt3r:main
+      [console_scripts]
+      createuser = st4rt3r.scripts.create_user:main
       """,
       )
