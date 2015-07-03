@@ -1,5 +1,3 @@
-from pip.backwardcompat import raw_input
-
 __author__ = 'rotem'
 import os
 import sys
@@ -27,9 +25,9 @@ def main(argv=sys.argv):
     engine = create_engine(postgresql_url(settings))
     DBSession.configure(bind=engine)
 
-    name = raw_input('User name:')
-    password = raw_input('Password:')
-    permission = raw_input('Permission:')
+    name = input('User name:')
+    password = input('Password:')
+    permission = input('Permission:')
 
     with transaction.manager:
         user = User(name=name, password=password, permission=permission)
