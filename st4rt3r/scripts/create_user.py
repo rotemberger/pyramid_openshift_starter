@@ -7,7 +7,7 @@ import transaction
 from sqlalchemy import create_engine
 from pyramid.paster import get_appsettings, setup_logging
 from ..internal.db import DBSession, Base, postgresql_url
-from ..models import User
+from ..models.auth import User
 
 
 def usage(argv):
