@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "Applying alembic migrations..."
+
+cd ${OPENSHIFT_REPO_DIR}
+alembic upgrade head
+
