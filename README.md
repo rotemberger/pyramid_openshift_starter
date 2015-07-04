@@ -18,6 +18,10 @@ The goal is to create a build that can be copied to existing Openshift applicati
 * python => 3.4
 * Apache web server => 2.4
 
+Packages (apt-get):
+* python-dev
+* libffi-dev
+
 **Note**: This build was only tested in Debian Jessie machine. The installer won't work on Windows machine.
 
 

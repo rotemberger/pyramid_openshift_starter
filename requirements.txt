@@ -1,3 +1,4 @@
+bcrypt
 psycopg2
 pyramid
 pyramid_chameleon
