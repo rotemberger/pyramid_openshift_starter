@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "Workaround pip installation for python 3 cartridge"
+# see: https://bugzilla.redhat.com/show_bug.cgi?format=multiple&id=1225291
+
+source ${OPENSHIFT_HOMEDIR}app-root/runtime/dependencies/python/virtenv/venv/bin/activate
+pip install -r ${OPENSHIFT_REPO_DIR}requirements.txt
