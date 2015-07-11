@@ -1,7 +1,7 @@
 bcrypt
 psycopg2
 pyramid
-pyramid_chameleon
+pyramid_jinja2
 pyramid_debugtoolbar
 pyramid_tm
 SQLAlchemy
