@@ -6,9 +6,10 @@ Pyramid Openshift starter is a build based upon:
 3. [Sqlalchemy] as ORM.
 4. [Alembic] as migrations manager.
 5. [Pyramid] by Pylons Project as back end framework.
-6. [AngularJS] as front end framework.
-7. [Bootstrap] as styling framework.
-8. [Gulp] as automated tasks handler.
+6. [Jinja2] as template engine.
+7. [AngularJS] as front end framework.
+8. [Bootstrap] as styling framework.
+9. [Gulp] as automated tasks handler.
 
 Getting all these ingredients to work together is a tidious task.
 The goal is to create a build that can be copied to existing Openshift application, and will also work locally on development machine via Apache web server.
@@ -70,3 +71,4 @@ MIT
 [Bootstrap]:http://getbootstrap.com/css
 [Sqlalchemy]:http://www.sqlalchemy.org
 [Alembic]:https://code.google.com/p/alembic/
+[Jinja2]:http://jinja.pocoo.org/
