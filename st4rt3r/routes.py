@@ -1,6 +1,6 @@
 __author__ = 'rotem'
 mapping = {
-    '/': 'home',
+    '/': 'index',
     'login': 'login',
     'logout': 'logout',
     'admin': 'admin'
