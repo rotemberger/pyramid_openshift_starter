@@ -1,6 +1,6 @@
 __author__ = 'rotem'
 from pyramid.view import view_config, forbidden_view_config
-from pyramid.security import remember
+from pyramid.security import remember, forget
 from sqlalchemy.orm.exc import NoResultFound
 from ..internal.db import DBSession
 from ..models.auth import User
@@ -27,3 +27,11 @@ def login_xhr(request):
         pass
 
     return {'status': 'fail', 'msg': 'Bad user name or password.'}
+
+
+@view_config(route_name='logout', request_method="POST", xhr="true", renderer="json")
+def logout(request):
+    headers = forget(request)
+    response = request.response
+    response.headerlist.extend(headers)
+    return {'status': 'success'}
