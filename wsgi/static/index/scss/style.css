@@ -1,0 +1,18 @@
+.login {
+  top: 0;
+  left: 0;
+  position: absolute;
+  cursor: pointer;
+  padding: 10px; }
+  .login a {
+    text-decoration: none;
+    color: #ffffff; }
+  .login i {
+    color: #eb8b95;
+    margin-right: 5px; }
+  .login:hover i {
+    color: #ffffff; }
+  .login:hover a {
+    text-decoration: underline; }
+
+/*# sourceMappingURL=style.css.map */
