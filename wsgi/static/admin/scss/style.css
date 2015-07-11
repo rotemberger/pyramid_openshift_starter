@@ -1,0 +1,15 @@
+.logout {
+  top: 0;
+  left: 0;
+  position: absolute;
+  cursor: pointer;
+  padding: 10px; }
+  .logout i {
+    color: #eb8b95;
+    margin-right: 5px; }
+  .logout:hover span {
+    text-decoration: underline; }
+  .logout:hover i {
+    color: #ffffff; }
+
+/*# sourceMappingURL=style.css.map */

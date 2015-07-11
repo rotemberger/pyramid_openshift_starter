@@ -1,0 +1,19 @@
+.logout {
+  top: 0;
+  left: 0;
+  position: absolute;
+  cursor: pointer;
+  padding:10px;
+  i {
+    color: #eb8b95;
+    margin-right: 5px;
+  }
+  &:hover {
+    span {
+      text-decoration: underline;
+    }
+    i {
+      color: #ffffff;
+    }
+  }
+}
